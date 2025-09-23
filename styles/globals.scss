@@ -1,0 +1,8 @@
+@use "./mixin.scss" as mixin;
+@use "./reset.scss";
+
+:root {
+  --max-width: 1100px;
+  --global-padding-mobile: 1rem;
+  --global-padding-desktop: 2rem;
+}

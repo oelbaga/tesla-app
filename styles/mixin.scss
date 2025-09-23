@@ -1,0 +1,39 @@
+@mixin small {
+  @media only screen and (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin desktoplg {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+//if needed
+@mixin small_laptop_custom {
+  @media only screen and (min-width: 768px) and (max-height: 650px) {
+    @content;
+  }
+}
+@mixin table {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+//ipad, tall portrait mode browsers
+@mixin portrait {
+  @media only screen and (orientation: portrait) and (min-width: 768px) {
+    @content;
+  }
+}
